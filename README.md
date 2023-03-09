@@ -6,6 +6,7 @@ Rail track inspection simulations with complete (zero-inflated) and partial (bin
 **Step 0.** Install the required python modules given in the requirement.txt file using the line below:
 
 _pip install -r requirements.txt_
+--------------------------------
 
 **Step 1.** Generate new simulation data or import the readily available data
 
@@ -31,5 +32,10 @@ If you would like to change these increments or bounds, you can do so by changin
 Step 1b. Loading available data
 
 You can use one of the folders in the data directory for testing the simulations. 
+--------------------------------
 
 **Step 2.** Testing inspection scenarios 
+
+If the folder you want to analyze is starting with "ZIP", it is a file prepared for Zero-Inflated Poisson model with complete miss rates. 
+
+If the folder you want to analyze is starting with "BP", it is a file prepared for Poisson-Binomial model with partial miss rates. 
