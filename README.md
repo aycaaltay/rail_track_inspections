@@ -6,6 +6,7 @@ Rail track inspection simulations with complete (zero-inflated) and partial (bin
 **Step 0.** Install the required python modules given in the requirement.txt file using the line below:
 
 _pip install -r requirements.txt_
+
 --------------------------------
 
 **Step 1.** Generate new simulation data or import the readily available data
