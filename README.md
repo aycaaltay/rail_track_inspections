@@ -43,3 +43,5 @@ Start by copy-pasting the data file into the analysis file.
 If the folder you want to analyze is starting with "ZIP", it involves files prepared for Zero-Inflated Poisson model with complete miss rates. Copy and paste the folder into the _Zero_Inflated_Poisson_Simulations_ directory. 
 
 If the folder you want to analyze is starting with "BP", it involves files prepared for Poisson-Binomial model with partial miss rates. Copy and paste the folder into the _Poisson_Binomial_Simulations_ directory. 
+
+_**Important note: Without importing the data and specifying the analysis folder name in the file, the algorithms will not run!**_
