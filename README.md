@@ -30,7 +30,7 @@ A new folder will be created specifying the analysis type and the defect arrival
 Please note that this file uses $p$ and $q$ values ranging from 0.05 to 0.95 with an increment of 0.05 (19 unique values for both variables). A total of $19 \cdot 19 = 361$  scenarios will be generated. 
 If you would like to change these increments or bounds, you can do so by changing lines 65-66 within the .py file.
 
-Step 1b. Loading available data
+_Step 1b._ Loading available data
 
 You can use one of the folders in the data directory for testing the simulations. 
 
