@@ -32,10 +32,13 @@ If you would like to change these increments or bounds, you can do so by changin
 Step 1b. Loading available data
 
 You can use one of the folders in the data directory for testing the simulations. 
+
 --------------------------------
 
 **Step 2.** Testing inspection scenarios 
 
-If the folder you want to analyze is starting with "ZIP", it is a file prepared for Zero-Inflated Poisson model with complete miss rates. 
+Start by copy-pasting the data file into the analysis file. 
 
-If the folder you want to analyze is starting with "BP", it is a file prepared for Poisson-Binomial model with partial miss rates. 
+If the folder you want to analyze is starting with "ZIP", it involves files prepared for Zero-Inflated Poisson model with complete miss rates. Copy and paste the folder into the _Zero_Inflated_Poisson_Simulations_ directory. 
+
+If the folder you want to analyze is starting with "BP", it involves files prepared for Poisson-Binomial model with partial miss rates. Copy and paste the folder into the _Poisson_Binomial_Simulations_ directory. 
