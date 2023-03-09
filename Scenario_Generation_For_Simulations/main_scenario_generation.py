@@ -61,17 +61,17 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 if __name__ == "__main__":
-
+    #Assign the list of p and q values
     p_values = np.arange(0.05, 0.96, 0.05)
     q_values = np.arange(0.05, 0.96, 0.05)
-
+    #Define inspection horizon and the number of trials for each scenario
     horizon = 5000
     num_trials = 3
-
+    # Assign track length
     track_length = 10 #km
 
 
-
+    # Take the model (analysis) type as a user input
     model_type =0
     print("\nInitiating...\n")
     print("Enter 1 for generating scenarios for complete miss rates (zero-inflated Poisson) ")
@@ -82,11 +82,11 @@ if __name__ == "__main__":
             print("You have entered a wrong number. Please enter 1 or 2. ")
 
 
-
+    # Take the defect arrival rate as a user input
     lambda1 = 0
     while lambda1<=0:
         lambda1 = float(input("Enter defect arrival rate for simulations: "))
-
+    # Generate folder and file names
     lambda_name = str(lambda1)
     lambda_name = lambda_name.replace(".", "");
 
@@ -101,7 +101,7 @@ if __name__ == "__main__":
     os.makedirs(dir_name)
 
     scenario_information = pd.DataFrame(columns=["Scenario", "lambda", "p", "q"])
-
+    # Initiate simulations
     for p in p_values:
         for q in q_values:
             print("Generating scenario " + str(scenario_index + 1) + "/" + str(len(p_values) * len(q_values)) + "...")
@@ -128,7 +128,7 @@ if __name__ == "__main__":
                 inspection_data.to_csv(filename)
 
     print("Organizing information for scenarios...")
-    filename+ dir_name + "/Parameters.csv"
+    filename= dir_name + "/Parameters.csv"
     scenario_information.to_csv(filename)
 
     print("Done!\n")
