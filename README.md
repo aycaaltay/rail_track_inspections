@@ -38,7 +38,7 @@ You can use one of the folders in the data directory for testing the simulations
 
 **Step 2.** Testing inspection scenarios 
 
-Start by copy-pasting the data file into the analysis file. 
+Start by copy-pasting the data file into the analysis file. Parameters.csv file in each folder provides information about scenarios in the same folder. 
 
 If the folder you want to analyze is starting with "ZIP", it involves files prepared for Zero-Inflated Poisson model with complete miss rates. Copy and paste the folder into the _Zero_Inflated_Poisson_Simulations_ directory. 
 
